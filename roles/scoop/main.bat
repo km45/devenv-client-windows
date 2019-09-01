@@ -21,6 +21,7 @@ setlocal
     for %%p in ("consolez" ^
                 "jq" ^
                 "libreoffice-fresh" ^
+                "peazip" ^
                 "python" ^
                 "vagrant" ^
                 "vscode-portable" ^
