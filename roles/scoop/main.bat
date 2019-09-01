@@ -71,7 +71,7 @@ setlocal
     )
 
     call :LogInfo "Install" %PACKAGE_NAME%
-    scoop install %PACKAGE_NAME%
+    call scoop install %PACKAGE_NAME%
 
     exit /b
 endlocal
