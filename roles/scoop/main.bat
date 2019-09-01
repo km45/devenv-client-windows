@@ -19,6 +19,7 @@ setlocal
     call :InstallPackage "aria2"
 
     for %%p in ("consolez" ^
+                "gimp" ^
                 "jq" ^
                 "libreoffice-fresh" ^
                 "peazip" ^
