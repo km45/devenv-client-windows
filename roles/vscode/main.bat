@@ -9,6 +9,7 @@ setlocal
 
     python -m pipenv sync
     python -m pipenv run -- python install_extensions.py vscode_extensions.yml
+    python -m pipenv run -- python change_user_settings.py
 
     exit /b
 endlocal
