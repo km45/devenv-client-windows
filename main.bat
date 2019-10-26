@@ -7,7 +7,10 @@ setlocal
     REM "Execute the role scoop at first"
     call %WORKDIR%\roles\scoop\main.bat
 
-    REM "Execute other roles."
+    REM "Execute the role python at second"
+    call %WORKDIR%\roles\python\main.bat
+
+    REM "Execute the other roles."
     call %WORKDIR%\roles\consolez\main.bat
     call %WORKDIR%\roles\vscode\main.bat
 

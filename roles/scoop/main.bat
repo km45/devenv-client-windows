@@ -12,6 +12,7 @@ setlocal
     call :UpdateInstalledPackages
 
     call :AddBucket "extras"
+    call :AddBucket "versions"
 
     call :InstallPackage "git-with-openssh"
     git config --global core.autocrlf false
@@ -23,7 +24,7 @@ setlocal
                 "jq" ^
                 "libreoffice-fresh" ^
                 "peazip" ^
-                "python" ^
+                "python37" ^
                 "vagrant" ^
                 "vscode-portable" ^
                 "winmerge" ) do (
