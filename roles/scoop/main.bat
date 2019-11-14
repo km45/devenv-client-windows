@@ -27,7 +27,8 @@ setlocal
                 "python37" ^
                 "vagrant" ^
                 "vscode-portable" ^
-                "winmerge" ) do (
+                "winmerge" ^
+                "winscp" ) do (
         call :InstallPackage %%p
     )
 
