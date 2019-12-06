@@ -23,6 +23,7 @@ setlocal
                 "gimp" ^
                 "jq" ^
                 "libreoffice-fresh" ^
+                "make" ^
                 "peazip" ^
                 "python37" ^
                 "shellcheck" ^
