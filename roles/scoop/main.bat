@@ -25,6 +25,7 @@ setlocal
                 "libreoffice-fresh" ^
                 "peazip" ^
                 "python37" ^
+                "shellcheck" ^
                 "vagrant" ^
                 "vscode-portable" ^
                 "winmerge" ^
