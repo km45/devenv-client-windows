@@ -19,7 +19,8 @@ setlocal
 
     call :InstallPackage "aria2"
 
-    for %%p in ("consolez" ^
+    for %%p in ("cmake" ^
+                "consolez" ^
                 "gimp" ^
                 "jq" ^
                 "libreoffice-fresh" ^
