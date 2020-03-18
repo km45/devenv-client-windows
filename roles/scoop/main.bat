@@ -69,9 +69,9 @@ endlocal
 
 :InstallPackage
 setlocal
-    set PACKAGE_NAME=%1
+    set PACKAGE_NAME=%~1
 
-    scoop list | find %PACKAGE_NAME% > nul
+    scoop list | find " %PACKAGE_NAME% " > nul
     if %ERRORLEVEL% == 0 (
         call :LogDebug "Already installed" %PACKAGE_NAME%
         exit /b
