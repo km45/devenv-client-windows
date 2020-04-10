@@ -28,6 +28,7 @@ setlocal
                 "peazip" ^
                 "python37" ^
                 "shellcheck" ^
+                "terminus" ^
                 "vagrant" ^
                 "vscode-portable" ^
                 "winmerge" ^
