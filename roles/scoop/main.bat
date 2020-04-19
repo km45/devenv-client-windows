@@ -21,6 +21,7 @@ setlocal
 
     for %%p in ("cmake" ^
                 "consolez" ^
+                "firefox-esr" ^
                 "gimp" ^
                 "jq" ^
                 "libreoffice-fresh" ^
