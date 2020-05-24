@@ -11,9 +11,6 @@ setlocal
 
     REM "Execute the role scoop at first"
     call %WORKDIR%\roles\scoop\main.bat %1
-    if %ERRORLEVEL% == 1 (
-        exit /b
-    )
 
     REM "Execute the role python at second"
     call %WORKDIR%\roles\python\main.bat
