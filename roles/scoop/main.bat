@@ -25,7 +25,8 @@ setlocal
 
     REM "install packages depending on mode"
     if %1 == 1 (
-        for %%p in ("flac" ^
+        for %%p in ("cryptomator" ^
+                    "flac" ^
                     "libreoffice-fresh" ) do (
             call :InstallPackage %%p
         )
