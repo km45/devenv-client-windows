@@ -25,7 +25,8 @@ setlocal
 
     REM "install packages depending on mode"
     if %1 == 1 (
-        for %%p in ("libreoffice-fresh" ) do (
+        for %%p in ("flac" ^
+                    "libreoffice-fresh" ) do (
             call :InstallPackage %%p
         )
     ) else if %1 == 2 (
