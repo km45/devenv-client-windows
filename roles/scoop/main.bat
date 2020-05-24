@@ -2,6 +2,10 @@
 
 :Main
 setlocal
+    if "%1" == "" (
+        exit /b 1
+    )
+
     where scoop > nul 2> nul
     if %ERRORLEVEL% == 1 (
         call :LogError "You must install scoop. https://github.com/lukesampson/scoop"
@@ -19,12 +23,26 @@ setlocal
 
     call :InstallPackage "aria2"
 
-    for %%p in ("cmake" ^
-                "consolez" ^
+    REM "install packages depending on mode"
+    if %1 == 1 (
+        for %%p in ("libreoffice-fresh" ) do (
+            call :InstallPackage %%p
+        )
+    ) else if %1 == 2 (
+        for %%p in ("cmake" ^
+                    "winscp" ) do (
+            call :InstallPackage %%p
+        )
+    ) else (
+        call :LogError "invalid mode specified"
+        exit /b 1
+    )
+
+    REM "install common packages"
+    for %%p in ("consolez" ^
                 "firefox-esr" ^
                 "gimp" ^
                 "jq" ^
-                "libreoffice-fresh" ^
                 "make" ^
                 "peazip" ^
                 "python37" ^
@@ -32,8 +50,7 @@ setlocal
                 "terminus" ^
                 "vagrant" ^
                 "vscode-portable" ^
-                "winmerge" ^
-                "winscp" ) do (
+                "winmerge" ) do (
         call :InstallPackage %%p
     )
 
