@@ -35,6 +35,8 @@ setlocal
                     "winscp" ) do (
             call :InstallPackage %%p
         )
+    ) else if %1 == 3 (
+        call :InstallPackage "firefox-esr"
     ) else (
         call :LogError "invalid mode specified"
         exit /b 1
@@ -42,7 +44,6 @@ setlocal
 
     REM "install common packages"
     for %%p in ("consolez" ^
-                "firefox-esr" ^
                 "gimp" ^
                 "jq" ^
                 "make" ^
