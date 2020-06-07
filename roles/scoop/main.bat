@@ -81,11 +81,11 @@ setlocal
     scoop bucket list | find %BUCKET_NAME% > nul
     if %ERRORLEVEL% == 0 (
         call :LogDebug "Already added" %BUCKET_NAME%
-        exit /b
+    ) else (
+        call :LogInfo "Add bucket" %BUCKET_NAME%
+        scoop bucket add %BUCKET_NAME%
     )
 
-    call :LogInfo "Add bucket" %BUCKET_NAME%
-    scoop bucket add %BUCKET_NAME%
     exit /b
 endlocal
 
