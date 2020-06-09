@@ -82,6 +82,7 @@ function main() {
     add_bucket "versions"
 
     git config --global core.autocrlf false
+    git config --global pull.ff only
 
     local packages=(\
         "consolez" \
