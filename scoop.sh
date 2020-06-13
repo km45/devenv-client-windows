@@ -104,6 +104,7 @@ function main() {
                 "cryptomator" \
                 "flac" \
                 "libreoffice-fresh" \
+                "xnviewmp" \
             )
             ;;
         "2" )
