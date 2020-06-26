@@ -103,6 +103,7 @@ function main() {
             packages+=(\
                 "cryptomator" \
                 "flac" \
+                "krita" \
                 "libreoffice-fresh" \
                 "xnviewmp" \
             )
