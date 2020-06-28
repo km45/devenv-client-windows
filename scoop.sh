@@ -88,6 +88,7 @@ function main() {
         "consolez" \
         "gimp" \
         "jq" \
+        "krita" \
         "make" \
         "peazip" \
         "python37" \
@@ -103,7 +104,6 @@ function main() {
             packages+=(\
                 "cryptomator" \
                 "flac" \
-                "krita" \
                 "libreoffice-fresh" \
                 "xnviewmp" \
             )
