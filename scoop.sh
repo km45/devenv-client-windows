@@ -120,6 +120,11 @@ function main() {
                 "firefox-esr" \
             )
             ;;
+        "4" )
+            packages+=(\
+                "googlechrome-portable" \
+            )
+            ;;
         * )
             LOGE "Invalid mode specified (mode=${mode})"
             return 1
