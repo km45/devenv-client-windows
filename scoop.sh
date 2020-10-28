@@ -111,6 +111,7 @@ function main() {
         "2" )
             packages+=(\
                 "cmake" \
+                "slack" \
                 "winscp" \
             )
             ;;
