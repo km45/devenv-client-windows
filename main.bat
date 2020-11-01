@@ -9,8 +9,9 @@ setlocal
         exit /b 1
     )
 
-    REM "Execute setup.bat and scoop.sh at first"
+    REM "Execute setup.bat, update.bat and scoop.sh at first"
     call %WORKDIR%\setup.bat
+    call %WORKDIR%\update.bat
     %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login scoop.sh %1
 
     REM "Execute the role python at second"

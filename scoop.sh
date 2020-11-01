@@ -26,16 +26,6 @@ function LOGE() {
     LOG_impl ${LEVEL} "${messages}"
 }
 
-function update_scoop() {
-    LOGI "Update scoop"
-    scoop update
-}
-
-function update_installed_packages() {
-    LOGI "Update installed packages"
-    scoop update '*'
-}
-
 function add_bucket() {
     local -r bucket_name=$1
 
@@ -74,9 +64,6 @@ function install_package() {
 
 function main() {
     local mode=$1
-
-    update_scoop
-    update_installed_packages
 
     add_bucket "extras"
     add_bucket "versions"
