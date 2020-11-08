@@ -91,7 +91,6 @@ function main() {
             packages+=(\
                 "cryptomator" \
                 "flac" \
-                "libreoffice-fresh" \
                 "xnviewmp" \
             )
             ;;
