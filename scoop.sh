@@ -72,7 +72,6 @@ function main() {
     git config --global pull.ff only
 
     local packages=(\
-        "consolez" \
         "gimp" \
         "jq" \
         "krita" \

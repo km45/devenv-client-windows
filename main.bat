@@ -18,7 +18,6 @@ setlocal
     call %WORKDIR%\roles\python\main.bat
 
     REM "Execute the other roles."
-    call %WORKDIR%\roles\consolez\main.bat
     call %WORKDIR%\roles\terminus\main.bat
     call %WORKDIR%\roles\vscode\main.bat
 
