@@ -21,6 +21,11 @@ setlocal
     call %WORKDIR%\roles\terminus\main.bat
     call %WORKDIR%\roles\vscode\main.bat
 
+    REM "Execute optional roles."
+    if "%1" == "1" (
+        %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login roles\cryptomator\main.sh
+    )
+
     exit /b
 endlocal
 
