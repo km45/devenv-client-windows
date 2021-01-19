@@ -82,6 +82,7 @@ function main() {
         "terminus" \
         "vagrant" \
         "vscode-portable" \
+        "windows-terminal" \
         "winmerge" \
     )
 
