@@ -20,6 +20,7 @@ setlocal
     REM "Execute the other roles."
     call %WORKDIR%\roles\terminus\main.bat
     call %WORKDIR%\roles\vscode\main.bat
+    call %WORKDIR%\roles\windows-terminal\main.bat
 
     REM "Execute optional roles."
     if "%1" == "1" (
