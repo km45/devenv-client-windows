@@ -79,7 +79,6 @@ function main() {
         "peazip" \
         "python37" \
         "shellcheck" \
-        "terminus" \
         "vagrant" \
         "vscode-portable" \
         "windows-terminal" \
