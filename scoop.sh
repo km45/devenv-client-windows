@@ -77,7 +77,7 @@ function main() {
         "krita" \
         "make" \
         "peazip" \
-        "python38" \
+        "python39" \
         "shellcheck" \
         "vagrant" \
         "vscode-portable" \
