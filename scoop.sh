@@ -90,6 +90,7 @@ function main() {
             packages+=(\
                 "cryptomator" \
                 "flac" \
+                "shotcut" \
                 "xnviewmp" \
             )
             ;;
