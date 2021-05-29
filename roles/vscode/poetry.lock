@@ -64,7 +64,7 @@ brotli = ["brotlipy (>=0.6.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "77992a1c3e23f3a1ffcd748e43914ce051f6f3091bd39e09f172aa434afd8320"
+content-hash = "e8a2cf6b20229be0a3d4bbe964c4f5b23f520efb7965e10b50799aa03a38d61c"
 
 [metadata.files]
 certifi = [
