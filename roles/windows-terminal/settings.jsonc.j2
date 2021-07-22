@@ -1,63 +1,58 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    //
-    // global-settings
-    //
+    "copyOnSelect": true,
     "defaultProfile": "{% raw %}{{% endraw %}{{ guid_gitbash }}{% raw %}}{% endraw %}",
-    "disabledProfileSources": [
+    "disableAnimations": true,
+    "disabledProfileSources":
+    [
         "Windows.Terminal.Azure"
     ],
-    "tabWidthMode": "compact",
-    "disableAnimations": true,
-    "copyOnSelect": true,
-    "showTerminalTitleInTitlebar": false,
-    //
-    // profile-settings
-    //
-    "profiles": {
-        "defaults": {
-            "fontSize": 11,
-            "fontFace": "Consolas"
+    "profiles":
+    {
+        "defaults":
+        {
+            "fontFace": "Consolas",
+            "fontSize": 11
         },
-        "list": [
+        "list":
+        [
             {
-                "guid": "{% raw %}{{% endraw %}{{ guid_gitbash }}{% raw %}}{% endraw %}",
-                "commandline": "%USERPROFILE%/scoop/apps/git-with-openssh/current/bin/bash.exe --login -i",
-                "startingDirectory": "%USERPROFILE%",
-                "name": "Git Bash",
-                "icon": "%USERPROFILE%/scoop/apps/git-with-openssh/current/mingw64/share/git/git-for-windows.ico",
-                "suppressApplicationTitle": true,
+                "closeOnExit": "always",
                 "colorScheme": "deep",
-                "closeOnExit": "always"
+                "commandline": "%USERPROFILE%/scoop/apps/git-with-openssh/current/bin/bash.exe --login -i",
+                "guid": "{% raw %}{{% endraw %}{{ guid_gitbash }}{% raw %}}{% endraw %}",
+                "icon": "%USERPROFILE%/scoop/apps/git-with-openssh/current/mingw64/share/git/git-for-windows.ico",
+                "name": "Git Bash",
+                "startingDirectory": "%USERPROFILE%",
+                "suppressApplicationTitle": true
             }
         ]
     },
-    //
-    // color-schemes
-    //
     "schemes": [
         {
-            "name": "deep",
-            "cursorColor": "#d0d0d0",
-            "selectionBackground": "#d0d0d0",
             "background": "#000000",
-            "foreground": "#cdcdcd",
             "black": "#000000",
-            "blue": "#5c6bfd",
-            "cyan": "#6eb4f2",
-            "green": "#37c32c",
-            "purple": "#dd5be5",
-            "red": "#d11600",
-            "white": "#e0e0e0",
-            "yellow": "#e3c421",
+            "blue": "#5C6BFD",
             "brightBlack": "#535353",
-            "brightBlue": "#8cb0f8",
-            "brightCyan": "#67ecff",
-            "brightGreen": "#01ea10",
-            "brightPurple": "#e056f5",
-            "brightRed": "#f4152c",
-            "brightWhite": "#f4f4f4",
-            "brightYellow": "#ffee1d"
+            "brightBlue": "#8CB0F8",
+            "brightCyan": "#67ECFF",
+            "brightGreen": "#01EA10",
+            "brightPurple": "#E056F5",
+            "brightRed": "#F4152C",
+            "brightWhite": "#F4F4F4",
+            "brightYellow": "#FFEE1D",
+            "cursorColor": "#D0D0D0",
+            "cyan": "#6EB4F2",
+            "foreground": "#CDCDCD",
+            "green": "#37C32C",
+            "name": "deep",
+            "purple": "#DD5BE5",
+            "red": "#D11600",
+            "selectionBackground": "#D0D0D0",
+            "white": "#E0E0E0",
+            "yellow": "#E3C421"
         }
-    ]
+    ],
+    "showTerminalTitleInTitlebar": false,
+    "tabWidthMode": "compact"
 }
