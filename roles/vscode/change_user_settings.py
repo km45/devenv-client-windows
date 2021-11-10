@@ -2,6 +2,7 @@
 import json
 import os
 import sys
+import yaml
 from logging import Logger
 
 import log
@@ -9,8 +10,19 @@ import log
 DEFAULT_LOGGER: Logger = log.create_default_logger()
 
 
+def get_extension_list(extension_list_file_path: str) -> list[str]:
+    KEY = "vscode_plugins"
+
+    with open(extension_list_file_path) as f:
+        data = yaml.safe_load(f)
+        return data[KEY]
+
+
 def main():
     logger = DEFAULT_LOGGER
+
+    extension_list_file = os.sys.argv[1]
+    remote_ssh_default_extensions = get_extension_list(extension_list_file)
 
     homedir = os.path.expanduser("~")
     scoopdir = os.path.join(homedir, "scoop")
@@ -44,6 +56,7 @@ def main():
                     "terminal.integrated.shell.windows": shell_path,
                     "terminal.integrated.shellArgs.windows": shell_args,
                     "remote.SSH.configFile": remote_ssh_config_path,
+                    "remote.SSH.defaultExtensions": remote_ssh_default_extensions,
                 },
                 ensure_ascii=False,
                 indent=4,
