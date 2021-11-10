@@ -35,10 +35,15 @@ def main():
             )
             shell_args = ["--login", "-i"]
 
+            remote_ssh_config_path = os.path.join(
+                homedir, ".ssh", "config.d", "vscode-remote-ssh"
+            )
+
             content = json.dumps(
                 {
                     "terminal.integrated.shell.windows": shell_path,
                     "terminal.integrated.shellArgs.windows": shell_args,
+                    "remote.SSH.configFile": remote_ssh_config_path,
                 },
                 ensure_ascii=False,
                 indent=4,
