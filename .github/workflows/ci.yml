@@ -1,0 +1,16 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  static_code_analysis:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: black --check
+  status_check:
+    runs-on: ubuntu-18.04
+    needs:
+      - static_code_analysis
+    steps:
+      - run: echo 'pass'
