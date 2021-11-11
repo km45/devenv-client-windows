@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
+import subprocess
 from logging import Logger
 
-from jinja2 import Template
-import subprocess
 import log
+from jinja2 import Template
 
 DEFAULT_LOGGER: Logger = log.create_default_logger()
 

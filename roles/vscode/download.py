@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from logging import Logger
 import os
-import requests
-import log
+from logging import Logger
 
+import log
+import requests
 
 DEFAULT_LOGGER: Logger = log.create_default_logger()
 
