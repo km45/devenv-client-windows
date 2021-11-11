@@ -3,9 +3,8 @@ import os
 import subprocess
 from logging import Logger
 
-import yaml
-
 import log
+import yaml
 
 DEFAULT_LOGGER: Logger = log.create_default_logger()
 

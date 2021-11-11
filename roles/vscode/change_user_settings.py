@@ -2,10 +2,10 @@
 import json
 import os
 import sys
-import yaml
 from logging import Logger
 
 import log
+import yaml
 
 DEFAULT_LOGGER: Logger = log.create_default_logger()
 
