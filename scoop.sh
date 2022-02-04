@@ -66,7 +66,6 @@ function main() {
     local mode=$1
 
     add_bucket "extras"
-    add_bucket "versions"
 
     git config --global core.autocrlf false
     git config --global core.editor nano
@@ -78,7 +77,7 @@ function main() {
         "krita" \
         "make" \
         "peazip" \
-        "python39" \
+        "python" \
         "shellcheck" \
         "vagrant" \
         "vscode" \
