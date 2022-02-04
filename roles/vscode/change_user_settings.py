@@ -30,7 +30,7 @@ def main():
     output_path = os.path.join(
         scoopdir,
         "apps",
-        "vscode-portable",
+        "vscode",
         "current",
         "data",
         "user-data",

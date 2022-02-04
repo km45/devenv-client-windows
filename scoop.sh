@@ -81,7 +81,7 @@ function main() {
         "python39" \
         "shellcheck" \
         "vagrant" \
-        "vscode-portable" \
+        "vscode" \
         "windows-terminal" \
         "winmerge" \
     )
