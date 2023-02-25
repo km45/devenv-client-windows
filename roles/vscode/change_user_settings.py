@@ -53,10 +53,12 @@ def main():
 
             content = json.dumps(
                 {
-                    "terminal.integrated.shell.windows": shell_path,
-                    "terminal.integrated.shellArgs.windows": shell_args,
+                    "editor.guides.bracketPairs": True,
+                    "gitlens.defaultGravatarsStyle": "identicon",
                     "remote.SSH.configFile": remote_ssh_config_path,
                     "remote.SSH.defaultExtensions": remote_ssh_default_extensions,
+                    "terminal.integrated.shell.windows": shell_path,
+                    "terminal.integrated.shellArgs.windows": shell_args,
                 },
                 ensure_ascii=False,
                 indent=4,
