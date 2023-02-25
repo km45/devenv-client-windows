@@ -53,6 +53,8 @@ def main():
 
             content = json.dumps(
                 {
+                    "editor.guides.bracketPairs": True,
+                    "gitlens.defaultGravatarsStyle": "identicon",
                     "terminal.integrated.shell.windows": shell_path,
                     "terminal.integrated.shellArgs.windows": shell_args,
                     "remote.SSH.configFile": remote_ssh_config_path,
