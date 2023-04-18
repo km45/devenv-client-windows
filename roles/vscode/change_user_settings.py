@@ -55,6 +55,7 @@ def main():
                 {
                     "editor.guides.bracketPairs": True,
                     "editor.stickyScroll.enabled": True,
+                    "editor.tabSize": 8,
                     "gitlens.defaultGravatarsStyle": "identicon",
                     "remote.SSH.configFile": remote_ssh_config_path,
                     "remote.SSH.defaultExtensions": remote_ssh_default_extensions,
