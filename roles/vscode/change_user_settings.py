@@ -59,6 +59,7 @@ def main():
                     "gitlens.defaultGravatarsStyle": "identicon",
                     "remote.SSH.configFile": remote_ssh_config_path,
                     "remote.SSH.defaultExtensions": remote_ssh_default_extensions,
+                    "terminal.integrated.allowChords": False,
                     "terminal.integrated.shell.windows": shell_path,
                     "terminal.integrated.shellArgs.windows": shell_args,
                 },
