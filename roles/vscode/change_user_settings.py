@@ -57,6 +57,15 @@ def main():
                     "editor.stickyScroll.enabled": True,
                     "editor.tabSize": 8,
                     "gitlens.defaultGravatarsStyle": "identicon",
+                    "markdownlint.config": {
+                        "MD007": {
+                            "indent": 4
+                        },
+                        "MD024": {
+                            "allow_different_nesting": True
+
+                        },
+                    },
                     "remote.SSH.configFile": remote_ssh_config_path,
                     "remote.SSH.defaultExtensions": remote_ssh_default_extensions,
                     "terminal.integrated.allowChords": False,
