@@ -62,7 +62,8 @@ def main():
                             "indent": 4
                         },
                         "MD024": {
-                            "allow_different_nesting": true
+                            "allow_different_nesting": True
+
                         },
                     },
                     "remote.SSH.configFile": remote_ssh_config_path,
