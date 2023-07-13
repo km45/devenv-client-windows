@@ -63,8 +63,6 @@ function install_package() {
 }
 
 function main() {
-    local mode=$1
-
     add_bucket "extras"
 
     git config --global core.autocrlf false
@@ -84,37 +82,6 @@ function main() {
         "windows-terminal" \
         "winmerge" \
     )
-
-    case ${mode} in
-        "1" )
-            packages+=(\
-                "cryptomator" \
-                "flac" \
-                "shotcut" \
-                "xnviewmp" \
-            )
-            ;;
-        "2" )
-            packages+=(\
-                "slack" \
-                "winscp" \
-            )
-            ;;
-        "3" )
-            packages+=(\
-                "firefox-esr" \
-            )
-            ;;
-        "4" )
-            packages+=(\
-                "googlechrome-portable" \
-            )
-            ;;
-        * )
-            LOGE "Invalid mode specified (mode=${mode})"
-            return 1
-            ;;
-    esac
 
     for package in "${packages[@]}"; do
         install_package "${package}"
