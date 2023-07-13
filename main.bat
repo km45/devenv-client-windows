@@ -4,15 +4,10 @@
 setlocal
     set WORKDIR=%~dp0
 
-    if "%1" == "" (
-        call :LogError "You must specify mode as argument-1."
-        exit /b 1
-    )
-
     REM "Execute setup.bat, update.bat and scoop.sh at first"
     call %WORKDIR%\setup.bat
     call %WORKDIR%\update.bat
-    %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login scoop.sh %1
+    %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login scoop.sh
 
     REM "Execute the role python at second"
     call %WORKDIR%\roles\python\main.bat
@@ -21,11 +16,6 @@ setlocal
     call %WORKDIR%\roles\git-bash\main.bat
     call %WORKDIR%\roles\vscode\main.bat
     call %WORKDIR%\roles\windows-terminal\main.bat
-
-    REM "Execute optional roles."
-    if "%1" == "1" (
-        %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login roles\cryptomator\main.sh
-    )
 
     exit /b
 endlocal
