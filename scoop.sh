@@ -70,9 +70,7 @@ function main() {
     git config --global pull.ff only
 
     local packages=(\
-        "gimp" \
         "jq" \
-        "krita" \
         "make" \
         "peazip" \
         "python" \
