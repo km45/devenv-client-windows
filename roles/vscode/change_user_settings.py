@@ -56,7 +56,6 @@ def main():
                     "editor.guides.bracketPairs": True,
                     "editor.stickyScroll.enabled": True,
                     "editor.tabSize": 8,
-                    "gitlens.defaultGravatarsStyle": "identicon",
                     "markdownlint.config": {
                         "MD007": {
                             "indent": 4
