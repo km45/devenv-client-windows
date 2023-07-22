@@ -65,6 +65,9 @@ function install_package() {
 function main() {
     add_bucket "extras"
 
+    mkdir -p ~/.config/git
+    echo '/.vscode' > ~/.config/git/ignore
+
     git config --global core.autocrlf false
     git config --global core.editor nano
     git config --global pull.ff only
