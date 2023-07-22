@@ -51,13 +51,13 @@ def main():
                     "editor.guides.bracketPairs": True,
                     "editor.stickyScroll.enabled": True,
                     "editor.tabSize": 8,
+                    "files.eol": "\n",
                     "markdownlint.config": {
                         "MD007": {
                             "indent": 4
                         },
                         "MD024": {
                             "allow_different_nesting": True
-
                         },
                     },
                     "remote.SSH.configFile": remote_ssh_config_path,
