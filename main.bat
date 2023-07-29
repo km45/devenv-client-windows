@@ -9,10 +9,7 @@ setlocal
     call %WORKDIR%\update.bat
     %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login scoop.sh
 
-    REM "Execute the role python at second"
-    call %WORKDIR%\roles\python\main.bat
-
-    REM "Execute the other roles."
+    REM "Execute roles."
     call %WORKDIR%\roles\git-bash\main.bat
     %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login %WORKDIR%\roles\vscode\main.sh
     %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login %WORKDIR%\roles\windows-terminal\main.sh
