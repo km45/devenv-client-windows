@@ -87,8 +87,8 @@ vscode_plugins:
   # ----------------------------------------------------------------------------
   # Python
   # ----------------------------------------------------------------------------
+  - charliermarsh.ruff
   - matangover.mypy
-  - ms-python.black-formatter
   - ms-python.python
   - ms-python.vscode-pylance
   #
