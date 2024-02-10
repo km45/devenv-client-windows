@@ -78,7 +78,6 @@ function main() {
         "peazip" \
         "python" \
         "shellcheck" \
-        "vagrant" \
         "vscode" \
         "windows-terminal" \
         "winmerge" \
