@@ -1,8 +1,6 @@
 #!/bin/bash
 set -eu -o pipefail
 
-readonly VENV_DIR_NAME=venv
-
 function LOG_impl() {
         local -r loglevel=$1
         local -r messages=${*:2}
@@ -42,6 +40,15 @@ function install_extension() {
         code --install-extension "${extension_id}"
 }
 
+readonly SETTINGS_JSON_BASE_FILE_PATH='settings_base.json'
+readonly SETTINGS_JSON_GENERATED_PATH='settings.json'
+
+function generate_settings() {
+        LOGD "Generate settings.json to put"
+        # NOTE: Add dynamic values if necessary (like jq '.foo|="bar"')
+        jq --indent 4 . <${SETTINGS_JSON_BASE_FILE_PATH} >${SETTINGS_JSON_GENERATED_PATH}
+}
+
 function main() {
         local -r workdir=$(dirname "$0")
         cd "${workdir}"
@@ -51,16 +58,10 @@ function main() {
                 install_extension "${extension_id}"
         done
 
-        if [ ! -e ${VENV_DIR_NAME}/Scripts/activate ]; then
-                LOGI "Create new venv"
-                python -m venv ${VENV_DIR_NAME}
-        fi
-
-        LOGI "Activate venv and install packages"
-        . ${VENV_DIR_NAME}/Scripts/activate && python -m pip install -r requirements.txt
-
         LOGI "Change vscode user settings"
-        python -m change_user_settings vscode_extensions.yml
+        generate_settings
+        LOGD "Put settings.json"
+        cp -pv ${SETTINGS_JSON_GENERATED_PATH} ~/scoop/apps/vscode/current/data/user-data/User/settings.json
 
 }
 
