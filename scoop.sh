@@ -79,7 +79,6 @@ function main() {
         "python" \
         "shellcheck" \
         "vscode" \
-        "windows-terminal" \
         "winmerge" \
     )
 

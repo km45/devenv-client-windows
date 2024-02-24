@@ -12,7 +12,6 @@ setlocal
     REM "Execute roles."
     call %WORKDIR%\roles\git-bash\main.bat
     %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login %WORKDIR%\roles\vscode\main.sh
-    %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login %WORKDIR%\roles\windows-terminal\main.sh
 
     exit /b
 endlocal
