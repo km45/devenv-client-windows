@@ -80,6 +80,7 @@ function main() {
         "shellcheck" \
         "vscode" \
         "winmerge" \
+        "yq" \
     )
 
     for package in "${packages[@]}"; do
