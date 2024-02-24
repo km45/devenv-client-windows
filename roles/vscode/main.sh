@@ -8,9 +8,21 @@ function LOG_impl() {
         echo "[${timestamp}] ${loglevel} ${messages}"
 }
 
+function LOGD() {
+        local -r messages=$*
+        local -r LEVEL='D'
+        LOG_impl ${LEVEL} "${messages}"
+}
+
 function LOGI() {
         local -r messages=$*
         local -r LEVEL='I'
+        LOG_impl ${LEVEL} "${messages}"
+}
+
+function LOGE() {
+        local -r messages=$*
+        local -r LEVEL='E'
         LOG_impl ${LEVEL} "${messages}"
 }
 
