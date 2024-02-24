@@ -5,24 +5,12 @@ import sys
 from logging import Logger
 
 import log
-import yaml
 
 DEFAULT_LOGGER: Logger = log.create_default_logger()
 
 
-def get_extension_list(extension_list_file_path: str) -> list[str]:
-    KEY = "vscode_plugins"
-
-    with open(extension_list_file_path) as f:
-        data = yaml.safe_load(f)
-        return data[KEY]
-
-
 def main():
     logger = DEFAULT_LOGGER
-
-    extension_list_file = os.sys.argv[1]
-    remote_ssh_default_extensions = get_extension_list(extension_list_file)
 
     homedir = os.path.expanduser("~")
     scoopdir = os.path.join(homedir, "scoop")
@@ -42,10 +30,6 @@ def main():
         with open(output_path, mode="w") as f:
             logger.info(f"Open user settings.json: {output_path}")
 
-            remote_ssh_config_path = os.path.join(
-                homedir, ".ssh", "config.d", "vscode-remote-ssh"
-            )
-
             content = json.dumps(
                 {
                     "editor.guides.bracketPairs": True,
@@ -60,8 +44,6 @@ def main():
                             "allow_different_nesting": True
                         },
                     },
-                    "remote.SSH.configFile": remote_ssh_config_path,
-                    "remote.SSH.defaultExtensions": remote_ssh_default_extensions,
                     "terminal.integrated.allowChords": False,
                     "terminal.integrated.defaultProfile.windows": "Git Bash",
                 },
