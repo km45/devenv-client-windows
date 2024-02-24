@@ -4,14 +4,14 @@ vscode_plugins:
   # ----------------------------------------------------------------------------
   # Common
   # ----------------------------------------------------------------------------
-  - alefragnani.Bookmarks
-  - MS-CEINTL.vscode-language-pack-ja
+  - alefragnani.bookmarks
+  - ms-ceintl.vscode-language-pack-ja
   - ms-vscode-remote.vscode-remote-extensionpack
   - nmsmith89.incrementor
   - shardulm94.trailing-spaces
   - streetsidesoftware.code-spell-checker
   - tomoki1207.vscode-input-sequence
-  - Tyriar.sort-lines
+  - tyriar.sort-lines
   - wmaurer.change-case
   - wraith13.bracket-lens
   #
@@ -35,7 +35,7 @@ vscode_plugins:
   # ----------------------------------------------------------------------------
   # CSV
   # ----------------------------------------------------------------------------
-  - GrapeCity.gc-excelviewer
+  - grapecity.gc-excelviewer
   - mechatroner.rainbow-csv
   #
   #
@@ -73,7 +73,7 @@ vscode_plugins:
   # ----------------------------------------------------------------------------
   # Markdown
   # ----------------------------------------------------------------------------
-  - DavidAnson.vscode-markdownlint
+  - davidanson.vscode-markdownlint
   - goessner.mdmath
   - shuworks.vscode-table-formatter
   #
@@ -114,7 +114,7 @@ vscode_plugins:
   # ----------------------------------------------------------------------------
   # SVG
   # ----------------------------------------------------------------------------
-  - SimonSiefke.svg-preview
+  - simonsiefke.svg-preview
   #
   #
   # ----------------------------------------------------------------------------
@@ -133,7 +133,7 @@ vscode_plugins:
   # ----------------------------------------------------------------------------
   # Xml
   # ----------------------------------------------------------------------------
-  - DotJoshJohnson.xml
+  - dotjoshjohnson.xml
   #
   #
   # ----------------------------------------------------------------------------
@@ -145,4 +145,4 @@ vscode_plugins:
   # ----------------------------------------------------------------------------
   # yUML
   # ----------------------------------------------------------------------------
-  - JaimeOlivares.yuml
+  - jaimeolivares.yuml
