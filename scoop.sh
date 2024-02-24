@@ -76,7 +76,6 @@ function main() {
         "jq" \
         "make" \
         "peazip" \
-        "python" \
         "shellcheck" \
         "vscode" \
         "winmerge" \
