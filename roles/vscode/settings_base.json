@@ -1,0 +1,16 @@
+{
+    "editor.guides.bracketPairs": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.tabSize": 8,
+    "files.eol": "\n",
+    "markdownlint.config": {
+        "MD007": {
+            "indent": 4
+        },
+        "MD024": {
+            "siblings_only": true
+        }
+    },
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash"
+}
