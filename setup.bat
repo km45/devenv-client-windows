@@ -8,7 +8,12 @@ setlocal
         exit /b
     )
 
-    call :InstallPackage "git-with-openssh"
+    where git > nul 2> nul
+    if %ERRORLEVEL% == 1 (
+        call :LogError "You must install git. (winget install Git.Git)"
+        exit /b
+    )
+
     call :InstallPackage "aria2"
 
     exit /b
