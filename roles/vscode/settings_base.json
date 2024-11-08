@@ -1,4 +1,5 @@
 {
+    "editor.fontFamily": "Cascadia Mono, BIZ UDGothic",
     "editor.guides.bracketPairs": true,
     "editor.stickyScroll.enabled": true,
     "editor.tabSize": 8,
