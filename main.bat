@@ -7,11 +7,11 @@ setlocal
     REM "Execute setup.bat, update.bat and scoop.sh at first"
     call %WORKDIR%\setup.bat
     call %WORKDIR%\update.bat
-    %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login scoop.sh
+    "%PROGRAMFILES%\Git\usr\bin\bash.exe" --login scoop.sh
 
     REM "Execute roles."
     call %WORKDIR%\roles\git-bash\main.bat
-    %HOMEDRIVE%%HOMEPATH%\scoop\apps\git-with-openssh\current\usr\bin\bash.exe --login %WORKDIR%\roles\vscode\main.sh
+    "%PROGRAMFILES%\Git\usr\bin\bash.exe" --login %WORKDIR%\roles\vscode\main.sh
 
     exit /b
 endlocal
