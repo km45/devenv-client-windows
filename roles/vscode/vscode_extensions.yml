@@ -6,7 +6,7 @@ vscode_plugins:
   # ----------------------------------------------------------------------------
   - alefragnani.bookmarks
   - ms-ceintl.vscode-language-pack-ja
-  - ms-vscode-remote.vscode-remote-extensionpack
+  - ms-vscode-remote.remote-wsl
   - nmsmith89.incrementor
   - shardulm94.trailing-spaces
   - streetsidesoftware.code-spell-checker
