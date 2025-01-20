@@ -5,12 +5,12 @@ vscode_plugins:
   # Common
   # ----------------------------------------------------------------------------
   - alefragnani.bookmarks
+  - kuone.sequence-number
   - ms-ceintl.vscode-language-pack-ja
   - ms-vscode-remote.remote-wsl
   - nmsmith89.incrementor
   - shardulm94.trailing-spaces
   - streetsidesoftware.code-spell-checker
-  - tomoki1207.vscode-input-sequence
   - tyriar.sort-lines
   - wmaurer.change-case
   - wraith13.bracket-lens
