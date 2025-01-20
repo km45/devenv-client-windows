@@ -11,7 +11,6 @@ vscode_plugins:
   - nmsmith89.incrementor
   - shardulm94.trailing-spaces
   - streetsidesoftware.code-spell-checker
-  - tomoki1207.vscode-input-sequence
   - tyriar.sort-lines
   - wmaurer.change-case
   - wraith13.bracket-lens
