@@ -5,6 +5,7 @@ vscode_plugins:
   # Common
   # ----------------------------------------------------------------------------
   - alefragnani.bookmarks
+  - kuone.sequence-number
   - ms-ceintl.vscode-language-pack-ja
   - ms-vscode-remote.remote-wsl
   - nmsmith89.incrementor
